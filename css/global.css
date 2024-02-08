@@ -1,0 +1,124 @@
+/* Poppin Font  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --font-size: 62.5%;
+  --font-family: "Poppins", sans-serif;
+  --light-dark: #393939;
+  --small-radius: 1rem;
+  --red-light: #dc2626;
+  --light-gray: #f3f4f6;
+  --white-color: #fff;
+  --indigo: #3b82f6;
+}
+
+/* reset some defult styles  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+body {
+  background-color: var(--light-gray);
+}
+
+a:link,
+a:visited,
+a:active {
+  color: var(--light-dark);
+}
+
+/* reusable classes  */
+
+.container {
+  width: 100rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.margin-x-y {
+  margin: 32px;
+}
+
+.margin-x {
+  margin: 0px 32px;
+}
+
+.margin-y {
+  margin: 32px 0px;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.margin-right {
+  margin: 0px auto 0px 0px;
+}
+
+.margin-left {
+  margin: 0px 0px 0px auto;
+}
+
+.padding-x-y {
+  padding: 32px;
+}
+
+.padding-x {
+  padding: 0px 32px;
+}
+
+.padding-y {
+  padding: 32px 0px;
+}
+
+.padding-auto {
+  padding: auto;
+}
+
+.padding-right {
+  padding: 0px auto 0px 0px;
+}
+
+.padding-left {
+  padding: 0px 0px 0px auto;
+}
+
+.padding-y-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.radius {
+  border-radius: var(--small-radius);
+}

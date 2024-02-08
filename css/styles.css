@@ -1,0 +1,73 @@
+.header {
+  background-color: var(--white-color);
+  width: 100%;
+  top: 0;
+  overflow: auto;
+}
+
+.navbar {
+  float: left;
+  padding-top: 1.2rem;
+}
+
+.logo {
+  float: right;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 4rem;
+  object-fit: cover;
+}
+
+.link li {
+  display: inline-block;
+  margin: 0 3rem 0 0;
+}
+
+.link a {
+  font-weight: 600;
+  font-size: 1.8rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.link a.active {
+  color: var(--indigo);
+}
+
+.link a:hover {
+  color: var(--indigo);
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0.3rem;
+  background-color: var(--light-dark);
+  left: 0;
+  bottom: -0.3rem;
+  border-radius: var(--small-radius);
+  transition: all 0.3s ease-in-out;
+}
+
+.link a:hover::after {
+  width: 100%;
+}
+
+.link a.active::after {
+  width: 100%;
+}
+
+.container table {
+  width: 100%;
+  margin: 3.2rem;
+}
+
+.container td {
+  width: 200px;
+  height: 100px;
+  border: 1px solid var(--light-dark);
+  border-radius: var(--small-radius);
+}
