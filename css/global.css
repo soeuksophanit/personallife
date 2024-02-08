@@ -36,22 +36,21 @@ a:active {
   color: var(--light-dark);
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* reusable classes  */
 
 .container {
   width: 100rem;
+  margin: 32px auto;
 }
 
 .text-center {
   text-align: center;
-}
-
-.inline {
-  display: inline;
-}
-
-.inline-block {
-  display: inline-block;
 }
 
 .relative {
@@ -64,30 +63,6 @@ a:active {
 
 .sticky {
   position: sticky;
-}
-
-.margin-x-y {
-  margin: 32px;
-}
-
-.margin-x {
-  margin: 0px 32px;
-}
-
-.margin-y {
-  margin: 32px 0px;
-}
-
-.margin-auto {
-  margin: auto;
-}
-
-.margin-right {
-  margin: 0px auto 0px 0px;
-}
-
-.margin-left {
-  margin: 0px 0px 0px auto;
 }
 
 .padding-x-y {

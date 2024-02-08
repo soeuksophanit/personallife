@@ -61,13 +61,26 @@
 }
 
 .container table {
-  width: 100%;
   margin: 3.2rem;
+  border-spacing: 1.2rem;
 }
 
 .container td {
-  width: 200px;
-  height: 100px;
-  border: 1px solid var(--light-dark);
+  height: 22rem;
   border-radius: var(--small-radius);
+  overflow: hidden;
+}
+
+.container td img {
+  object-position: left;
+}
+
+.container td div {
+  height: 22rem;
+  width: 100%;
+}
+
+.container .main-img {
+  height: 100%;
+  width: 36rem;
 }
