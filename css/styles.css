@@ -3,6 +3,8 @@
   width: 100%;
   top: 0;
   overflow: auto;
+  z-index: 99;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .navbar {
@@ -75,12 +77,42 @@
   object-position: left;
 }
 
-.container td div {
+.container td > div {
   height: 22rem;
   width: 100%;
+  overflow: hidden;
 }
 
 .container .main-img {
   height: 100%;
   width: 36rem;
+}
+
+.overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  transition: all 0.3s linear;
+}
+
+.overlay:hover::after {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.describe {
+  z-index: 99;
+  padding: 1.2rem;
+  bottom: 0;
+  color: var(--white-color);
+}
+
+.describe p:nth-child(1) {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.describe p:nth-child(2) {
+  font-size: 1.4rem;
+  font-weight: 500;
 }
