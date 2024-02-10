@@ -1,3 +1,8 @@
+hr {
+  background-color: var(--red-light);
+  height: 0.3rem;
+}
+
 .header {
   background-color: var(--white-color);
   width: 100%;
@@ -62,22 +67,21 @@
   width: 100%;
 }
 
-.container table {
-  margin: 3.2rem;
+div.container table {
   border-spacing: 1.2rem;
 }
 
-.container td {
+div.container td {
   height: 22rem;
   border-radius: var(--small-radius);
   overflow: hidden;
 }
 
-.container td img {
+div.container td img {
   object-position: left;
 }
 
-.container td > div {
+div.container td > div {
   height: 22rem;
   width: 100%;
   overflow: hidden;
@@ -107,6 +111,11 @@
   color: var(--white-color);
 }
 
+#more-table .describe {
+  width: 100%;
+  text-align: center;
+}
+
 .describe p:nth-child(1) {
   font-size: 1.8rem;
   font-weight: 700;
@@ -115,4 +124,134 @@
 .describe p:nth-child(2) {
   font-size: 1.4rem;
   font-weight: 500;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.6rem 1.6rem;
+  background-color: var(--red-light);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--white-color);
+  border-radius: var(--small-radius);
+  transition: all 0.3s ease-in-out;
+  margin: 1.2rem auto;
+}
+
+.btn:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card {
+  background-color: var(--white-color);
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#card table {
+  height: 30rem;
+}
+
+#card table td > div {
+  height: 100%;
+}
+
+#card table td > div img {
+  height: 16rem;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card img {
+  border-radius: var(--small-radius);
+}
+
+.content {
+  padding: 1.2rem;
+}
+
+.content p {
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.card-wrapper td {
+  border-radius: var(--small-radius);
+}
+
+/* more table section  */
+h3.text-center {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+#more-table table {
+  width: 100%;
+}
+
+#more-table table td {
+  width: 250px;
+}
+
+#more-table .main-img {
+  height: 100%;
+  width: unset;
+}
+
+#more-table .overlay::after {
+  transition: all 0.2s ease-in-out;
+}
+
+#more-table .overlay::after {
+  top: 30%;
+}
+
+#more-table .overlay:hover::after {
+  top: 0;
+}
+
+#more-table .left-to-right.overlay::after {
+  top: 0;
+  right: 30%;
+}
+
+#more-table .left-to-right.overlay:hover:after {
+  right: 0;
+}
+
+/* footer section  */
+
+#footer table {
+  width: 100%;
+  background-color: #fff;
+  padding: 2.2rem 0;
+}
+
+#footer td {
+  vertical-align: top;
+}
+
+#footer img {
+  width: 1.2rem;
+}
+
+#footer h3 {
+  font-size: 2.6rem;
+  margin: 3.2rem auto;
+}
+
+#footer p,
+span {
+  font-size: 1.4rem;
+}
+
+#footer li {
+  text-align: justify;
 }
